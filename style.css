@@ -17,7 +17,16 @@ nav a {
     text-decoration: none;
 }
 main {
-    padding: 2rem;
+  max-width: 800px;      /* Limits how wide the text stretches */
+  margin: 0 auto;         /* Centers the main content */
+  font-size: 1.1rem;      /* Slightly larger text */
+  line-height: 1.6;       /* More comfortable spacing */
+  padding: 1rem;
+}
+
+p {
+  text-align: justify;    /* Neatly aligns text on both sides */
+}
 }
 footer {
     background-color: #1e1e1e;
