@@ -11,23 +11,16 @@
       margin: 0 auto;
       padding: 2rem;
     }
-    .left-img, .right-img {
-      width: 48%;
-      max-width: 600px;
-      box-sizing: border-box;
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
     }
-    .left-img {
-      float: left;
-      margin-right: 2%;
-    }
-    .right-img {
-      float: right;
-      margin-left: 2%;
-    }
-    .clearfix::after {
-      content: "";
-      display: table;
-      clear: both;
+    .image-row img {
+      max-width: 100%;
+      height: auto;
+      max-height: 600px;
     }
   </style>
 </head>
@@ -45,9 +38,11 @@
     </nav>
   </header>
 
-  <main class="clearfix">
-    <img src="cv.jpg" alt="CV Document" class="left-img">
-    <img src="perspective.png" alt="Creative Perspective" class="right-img">
+  <main>
+    <div class="image-row">
+      <img src="cv.jpg" alt="CV Document">
+      <img src="perspective.png" alt="Creative Perspective">
+    </div>
   </main>
 
   <footer>
