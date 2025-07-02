@@ -24,7 +24,7 @@ main {
   padding: 1rem;
 }
 
-p {
+p 
   text-align: justify;    /* Neatly aligns text on both sides */
 }
 }
