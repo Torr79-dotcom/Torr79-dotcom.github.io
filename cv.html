@@ -1,35 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .left-img, .right-img {
+      width: 48%;
+      max-width: 600px;
+      box-sizing: border-box;
+    }
+    .left-img {
+      float: left;
+      margin-right: 2%;
+    }
+    .right-img {
+      float: right;
+      margin-left: 2%;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>CV</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="cv.html">CV</a>
-            <a href="proficient.html">Proficient Stage</a>
-            <a href="graduate.html">Graduate Stage</a>
-            <a href="learning-areas.html">Learning Areas</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <main>
-  <img src="CV.jpg" alt="CV Page 1" width="600" style="float: left; margin: 0 20px 20px 0;">
-  <img src="perspective.png" alt="CV Page 2" width="600" style="float: right; margin: 0 0 20px 20px;">
-  <div style="clear: both;"></div>
-</main>
+  <header>
+    <h1>CV</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="cv.html">CV</a>
+      <a href="proficient.html">Proficient Stage</a>
+      <a href="graduate.html">Graduate Stage</a>
+      <a href="learning-areas.html">Learning Areas</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    </main>
-    <footer>
-        &copy; 2025 Torr Smith
-    </footer>
+  <main class="clearfix">
+    <img src="cv.jpg" alt="CV Document" class="left-img">
+    <img src="perspective.png" alt="Creative Perspective" class="right-img">
+  </main>
+
+  <footer>
+    &copy; 2025 Torr Smith
+  </footer>
 </body>
 </html>
